@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.equipo.farc_ep">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"> </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Sing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Registro_Usuarios" />
+        <activity android:name=".Menu_Admin" />
+        <activity android:name=".Registrar_zona" />
+        <activity android:name=".Registrar_reincorporados" />
+        <activity android:name=".Registrar_capacitaciones" />
+        <activity android:name=".Registrar_penas" />
+        <activity android:name=".SinPrivilegios" />
+        <activity android:name=".Menu_Consultar" />
+        <activity android:name=".Consultar_Usuarios" />
+        <activity android:name=".Consultar_Zonas" />
+        <activity android:name=".Consultar_Reincorporados" />
+        <activity android:name=".Consultar_Capacitaciones" />
+        <activity android:name=".Consultar_Penas"></activity>
+    </application>
+
+</manifest>
